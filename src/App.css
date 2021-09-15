@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+/* .main{
+  background-image: url('https://media.istockphoto.com/photos/check-off-a-todo-list-with-a-black-pen-picture-id1212554542?k=20&m=1212554542&s=612x612&w=0&h=-oEdrogzLxoGXrFNKPSnTlqI7H2GQ8a8wL6P4YEKq1g=');
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+background-blend-mode: soft-light; */
+/* } */
+.logo{
+  background-color: rgb(187, 53, 53);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
+  /* bottom: 0; */
+}
+.logo h1{
+color: white;
+margin: 0;
+padding: 10px ;
+}
+.inputDiv {
+display: flex;
+justify-content: center;
+height: 50px;
+margin: 0 10px;
+/* margin-top: 20px; */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
+position: sticky;
+margin-top: 20px;
+top: 0;
+  left: 0;
+  right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputDiv > input{
+  padding: 10px;
+flex: 10;
+outline: none;
+font-size: 18px;
+text-overflow: ellipsis;
+border-radius:  5px 0 0 5px ;
+border: 2px solid transparent;
+
+}
+.inputDiv > input:focus{
+
+border: 2px solid rgb(187, 53, 53)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.inputDiv > button{
+flex: 2;
+font-size: 18px;
+border: none;
+background-color: rgb(187, 53, 53);
+color: white;
+position: relative;
+
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+border-radius: 0 5px 5px 0;
+border: 2px solid transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputDiv > button:after {
+  content: "";
+  background: rgb(255, 147, 147);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.inputDiv > button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
-.App-link {
-  color: #61dafb;
+.listDiv{
+  margin: 0 10px;
+margin-top: 20px;
+/* border: 2px solid black; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listDiv>ul{
+margin: 0;
+padding: 0;
+
+}
+.listDiv>ul>li{
+list-style: none;
+display: flex;
+/* justify-content: space-between; */
+font-size: 20px;
+/* padding: 10px; */
+margin-bottom: 10px;
+height: 50px;
+background-color:white ;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
+border-radius:  5px;
+}
+.listDiv>ul>li>span{
+flex: 10;
+display: flex;
+justify-content: center;
+padding: 0 10px;
+text-overflow: ellipsis;
+flex-direction: column;
+
+}
+.listDiv>ul>li>button{
+border: 2px solid transparent;
+font-size: 18px;
+background-color:rgb(187, 53, 53) ;
+flex: 1;
+height: 100%;
+cursor: pointer;
+color: white;
+
+}
+.listDiv>ul>li>button:hover{
+border: 2px solid rgb(187, 53, 53);
+
+background-color:white ;
+
+color: rgb(187, 53, 53);
+
+}
+
+.time{
+  font-size: 10px;
+  text-align: right;
+  
+}
+.delbtn{
+  border-radius: 0 5px 5px 0
 }
