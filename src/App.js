@@ -38,7 +38,7 @@ function App() {
       <div className="inputDiv">
       <input value={value} onChange={(e) => setValue(e.target.value)}type="text" placeholder="Set your target here..." />
       <button onClick={addTodo}>Add</button>
-      <button className="delbtn">Del All</button>
+      {/* <button className="delbtn">Del All</button> */}
       </div>
       <div className="listDiv">
       <ul>
