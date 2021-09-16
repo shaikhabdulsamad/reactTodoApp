@@ -50,7 +50,7 @@ transition-duration: 0.4s;
 text-decoration: none;
 overflow: hidden;
 cursor: pointer;
-/* border-radius: 0 5px 5px 0; */
+border-radius: 0 5px 5px 0;
 border: 2px solid transparent;
 }
 
