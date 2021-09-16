@@ -96,6 +96,7 @@ background-color:white ;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
 border-radius:  5px;
 text-overflow: ellipsis;
+padding: 5px 0;
 }
 .listDiv>ul>li>span{
 flex: 10;
